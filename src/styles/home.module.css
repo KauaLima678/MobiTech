@@ -1,0 +1,140 @@
+.herosection{
+    height: 90vh;
+    img{
+        object-fit: cover;
+        height: 90vh;
+        width: 100%;
+    }
+}
+
+.intro{
+    padding: 50px 100px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(249, 252, 255);
+
+    h1{
+        font-size: 60px;
+    }
+
+    span{
+            color: oklch(.25 .15 258.34);
+        }
+
+
+        p{
+            font-size: 25px;
+            text-align: center;
+            color: #737373;
+            width: 90%;
+        }
+
+        .btnAcess{
+            border: none;
+            color: white;
+            background-color: oklch(.25 .15 258.34);
+            padding: 15px 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        
+            a{
+                text-decoration: none;
+            }
+}
+
+.services{
+    padding: 50px 100px;
+    min-height: 70vh;
+
+    .servicesTitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        h1{
+            font-size:  40px 
+        }
+        p{
+            font-size: 20px;
+            color: #737373;
+        }
+    }
+
+    .gridCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 40px;
+        gap: 30px;
+
+        .card{
+            padding: 40px 30px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            transition: .5s ease;
+            &:hover{
+                    .icon{
+                    width: 53px;
+                    height: 53px;
+                    }
+                .titleCard{
+                    color: oklch(.25 .15 258.34);
+                }
+
+                transform: scale(1.05);
+                box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+            }
+
+
+            .icon{
+                color: #fff;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                transition: .5s ease;
+
+                svg{
+                    font-size: 30px;
+                }
+                
+            }
+
+            .eye{
+                background-color: oklch(72.3% 0.219 149.579);
+            }
+
+            .brain{
+                background-color: oklch(70.4% 0.14 182.503);
+            }
+
+            .titleCard{
+                font-size: 25px;
+                transition: .5s;
+            }
+
+            .desc{
+                font-size: 20px;
+            }
+
+        }
+    }
+}

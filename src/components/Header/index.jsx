@@ -24,13 +24,6 @@ export default function Header({busca, setBusca}) {
         <Link to='/categorias'>Categorias</Link>
       </nav>
     </header>
-    <div className={style.tags}>
-      <div className={style.links}>
-        <Link>Telas</Link>
-        <Link>Acessórios</Link>
-        <Link>Baterias</Link>
-      </div>
-    </div>
     </div>
   )
 }

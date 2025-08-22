@@ -21,7 +21,7 @@ export default function Home() {
     <div className={style.intro}>
       <h1>Gerencie seu Estoque com <span>Inteligência</span></h1>
       <p>Sistema completo de gerenciamento de estoque para sua loja de componentes eletrônicos. Controle produtos, monitore níveis de estoque e otimize suas vendas.</p>
-      <Link className={style.btnAcess}><LuBox /> Acessar Sistema</Link>
+      <Link to='/produtos' className={style.btnAcess}><LuBox /> Acessar Sistema</Link>
     </div>
 
     <div className={style.services}>

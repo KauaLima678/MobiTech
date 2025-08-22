@@ -17,7 +17,7 @@
       font-size: 50px;
       border: 2px solid rgba(0, 0, 0, 0.5);
       height: 220px;
-      width: 400px;
+      width: 450px;
       padding: 30px;
       border-radius: 10px;
       flex-direction: column;
@@ -48,7 +48,7 @@
     .cardHeader {
       border: 1px solid rgba(0, 0, 0, 0.1);
       height: 220px;
-      width: 400px;
+      width: 450px;
       display: flex;
       flex-direction: column;
       padding: 30px;
@@ -93,7 +93,7 @@
   .categorias {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
   }
 
   .gridCategorias {
@@ -104,7 +104,7 @@
     .categoria {
       border: 1px solid rgba(0, 0, 0, 0.1);
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      height: auto;
+      height: 220px;
       display: flex;
       flex-direction: column;
       padding: 30px;

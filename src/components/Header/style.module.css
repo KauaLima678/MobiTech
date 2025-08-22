@@ -59,8 +59,26 @@
                 text-decoration: none;
                 color: #fff;
                 font-size: 18px;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: -10px;
+                    width: 0;
+                    height: 2px;
+                    background: linear-gradient(to right, #4f46e5, #3b82f6);
+                    transition: width .5s ease;
+                }
             }
+
         }
+
+        nav a:hover::after{
+    width: 100%;
+}
     }
 
      .tags{
@@ -81,7 +99,9 @@
                 a{
                     text-decoration: none;
                     color: #000;
+                    
                 }
             }
         }
 }
+

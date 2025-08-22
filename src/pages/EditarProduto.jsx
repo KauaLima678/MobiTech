@@ -267,6 +267,7 @@ export default function CadastroProduto() {
               </button>
 
               <button
+              type="button"
                 className={style.trash}
                 onClick={() => deletarProduto(id)}
               >

@@ -17,11 +17,16 @@
       font-size: 50px;
       border: 2px solid rgba(0, 0, 0, 0.5);
       height: 220px;
-      width: 450px;
+      width: 400px;
       padding: 30px;
       border-radius: 10px;
       flex-direction: column;
       gap: 20px;
+      cursor: pointer;
+
+      &:hover{
+        border-color: #1d82c9;
+      }
 
       .tagText {
         font-size: 16px;
@@ -42,13 +47,17 @@
         padding: 15px;
         border: none;
         font-size: 30px;
+
+        &:hover{
+          background: linear-gradient(90deg, #4f46e5, #3b82f6);
+        }
       }
     }
 
     .cardHeader {
       border: 1px solid rgba(0, 0, 0, 0.1);
       height: 220px;
-      width: 450px;
+      width: 400px;
       display: flex;
       flex-direction: column;
       padding: 30px;

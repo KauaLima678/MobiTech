@@ -203,16 +203,16 @@ export default function Categorias() {
 
     {cadastroModal &&(
       <div className={style.overlay} onClick={() => setCadastroModal(false)}>
-      <form className={style.form} onSubmit={handleSubmit} onClick={(e) => e.stopPropagation()}>
+      <form className={style.form} onSubmit={handleCadastroSubmit} onClick={(e) => e.stopPropagation()}>
         <h1>Cadastrar Categoria</h1>
           <div className={style.inputs}>
             <div className={style.inputCont}>
               <label htmlFor="nome">Nome da Categoria</label>
-              <input type="text" id="nome" value={nome} onChange={(e) => setNome(e.target.value)} required />
+              <input type="text" id="nome" value={novoNome} onChange={(e) => setNovoNome(e.target.value)} required />
             </div>
             <div className={style.inputCont}>
               <label htmlFor="descricao">Descrição</label>
-              <textarea id="descricao" value={descricao} onChange={(e) => setDescricao(e.target.value)} required />
+              <textarea id="descricao" value={novaDescricao} onChange={(e) => setNovaDescricao(e.target.value)} required />
             </div>
             <div className={style.botoes}>
               <button className={style.cancelar} type="button" onClick={fecharCadastro}>Cancelar</button>
